@@ -9,7 +9,7 @@ const port = 3000;
 
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://swaraj1920:swaraj1920@cluster0.6yd9l.mongodb.net/taskmanagement', {
+mongoose.connect('mongodb+srv://pratikshakanoja2001:ppwkvqsIAxwVUEPk@cluster0.mbouu2d.mongodb.net/taskmanagement', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

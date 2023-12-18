@@ -9,7 +9,7 @@ const natsOptions = {
 let natsConnection;
 
 const publishEvent = async (subject, data) => {
-    if (!natsConnection) {
+    if (!natsConnection || natsConnection.isClosed()) {
         console.log('Attempting to connect to NATS server...');
         natsConnection = await connect(natsOptions);
         console.log('Connected to NATS server.');
